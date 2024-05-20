@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans;
+}
+
+button {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+}
+
+:root {
+  --bg-color:rgb(255, 255, 255);
+  --txt-color:rgb(73, 76, 107);
+  --disabled-txt-color:rgb(209, 210, 218);
+  --unhover-color:rgb(148, 149, 165);
+  --border-color:rgb(227, 228, 241);
+  --box-shadow-color:rgba(194, 195, 214, 0.5);
+}
+
+.full-screen {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./assets/img/Bitmap.jpeg) no-repeat center top;
+  background-size: 100% 300px;
+  padding: 0px 24px;
+  padding-bottom: 50px;
+}
+.full-screen .wrapper {
+  max-width: 540px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.full-screen .wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.full-screen .wrapper header h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.full-screen .wrapper header img {
+  cursor: pointer;
+}
+
+.dark-mode-bg {
+  background: url(./assets/img/darkModeBg.png) no-repeat center top;
+  background-size: 100% 300px;
+  background-color: rgb(23, 24, 35);
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode {
+  --bg-color:rgb(37, 39, 61);
+  --txt-color:rgb(200, 203, 231);
+  --disabled-txt-color:rgb(77, 80, 103);
+  --unhover-color:rgb(77, 80, 103);
+  --border-color:rgb(57, 58, 75);
+  --box-shadow-color:rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 450px) {
+  .full-screen {
+    background-size: 100% 200px;
+  }
+  .full-screen .wrapper header h1 {
+    font-size: 30px;
+  }
+  .full-screen .wrapper header img {
+    width: 20px;
+    height: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

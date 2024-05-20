@@ -1,0 +1,16 @@
+ul {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  list-style: none;
+  font-weight: 700;
+  letter-spacing: -0.19px;
+  cursor: pointer;
+  color: var(--unhover-color);
+}
+ul li:hover {
+  color: var(--txt-color);
+}
+ul .active {
+  color: var(--txt-color);
+}/*# sourceMappingURL=Filter.css.map */

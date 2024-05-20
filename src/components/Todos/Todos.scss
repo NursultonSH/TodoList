@@ -1,0 +1,90 @@
+.todos{
+    width: 100%;
+    background-color: var(--bg-color);
+    max-height: 378px;
+    overflow: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .todo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        column-gap: 24px;
+        width: 100%;
+        min-height: 63px;
+        background-color:var(--bg-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 0px 24px;  
+        .item{
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+            p{
+                font-size: 18px;
+                letter-spacing: -0.25px;
+                color: var(--txt-color);
+                transition: 0.1s;
+                margin-left: 45px;
+            }
+            input[type="checkbox"]{
+                appearance: none;
+                -webkit-appearance: none;
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                border:1px solid var(--border-color);
+                cursor: pointer;
+                border-radius: 100%;
+                transition: 0.1s;
+            }
+            input[type="checkbox"]:checked{
+                background: url(../../assets/icons/check.svg)no-repeat center center, linear-gradient(135deg, #5DF 0%, #C058F3 100%) ;
+            }
+            input[type = "checkbox"]:checked ~ p{
+                text-decoration: line-through;
+                color:var(--disabled-txt-color);
+            }
+            input[type = "checkbox"]:active{
+                transform: scale(1.2);
+            }
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: #C058F3;
+            cursor: pointer;
+            transition: 0.1s;
+            &:active{
+                transform:scale(1.2);
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .todos{
+        max-height: 312px;
+        .todo{
+            height: 52px;
+            padding: 0 20px;
+            .item{
+                p{
+                    font-size: 12px;
+                    letter-spacing: -0.17px;
+                }
+                input[type="checkbox"]{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            svg{
+                width: 15px;
+            }
+        }
+    
+    }
+} 
+

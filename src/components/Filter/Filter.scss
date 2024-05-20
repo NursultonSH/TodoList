@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    column-gap: 18px;
+    list-style: none;
+    font-weight: 700;
+    letter-spacing: -0.19px;
+    cursor: pointer;
+    color: var(--unhover-color);
+    li{
+        &:hover{
+            color: var(--txt-color);
+        }
+    }
+    .active{
+        color: var(--txt-color);
+    }
+}

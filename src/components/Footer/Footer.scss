@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 24px;
+    color: var(--unhover-color);
+    background-color: var(--bg-color);
+    .items{
+        cursor: pointer;
+        &:hover{
+            color:var(--txt-color);
+        }
+    }
+    .clear{
+        cursor: pointer;
+        &:hover{
+            color: var(--txt-color);
+        }
+    }
+}
+
+@media only screen and (max-width:550px) {
+    footer{
+        .desktop-filter{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    footer{
+        padding: 0 20px;
+        .items{
+            font-size: 12px;
+        }
+        .clear{
+            font-size: 12px;
+        }
+    }
+}
